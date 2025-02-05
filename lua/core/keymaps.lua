@@ -75,6 +75,12 @@ keymap.set("n", "<leader>h7", function() require("harpoon.ui").nav_file(7) end, 
 keymap.set("n", "<leader>h8", function() require("harpoon.ui").nav_file(8) end, {desc = "Harpoon navigate file 8"})
 keymap.set("n", "<leader>h9", function() require("harpoon.ui").nav_file(9) end, {desc = "Harpoon navigate file 9"})
 
+-- Git Messenger
+keymap.set("n", "<leader>gm", function() require("messenger").show() end, {desc = "Git Messenger Show"})
+
+-- NeoGit
+keymap.set("n", "<leader>ng", function() require("neogit").open({ kind = "floating" }) end, {desc = "NeoGit"})
+
 -- Vim REST Console
 keymap.set("n", "<leader>xr", ":call VrcQuery()<CR>", {desc = "Run REST query"})
 

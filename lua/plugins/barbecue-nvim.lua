@@ -1,4 +1,4 @@
--- Display LSP-based breadcrumbs
+-- This is a VS Code like winbar that displays LSP-based breadcrumbs
 return {
   -- https://github.com/utilyre/barbecue.nvim
   "utilyre/barbecue.nvim",
