@@ -57,6 +57,7 @@ keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags, {desc = "H
 keymap.set('n', '<leader>fs', require('telescope.builtin').current_buffer_fuzzy_find, {desc = "Current buffer fuzzy finder"})
 keymap.set('n', '<leader>fo', require('telescope.builtin').lsp_document_symbols, {desc = "LSP Document symbols"})
 keymap.set('n', '<leader>fi', require('telescope.builtin').lsp_incoming_calls, {desc = "LSP incoming calls"})
+keymap.set('n', '<leader>fd', require('telescope.builtin').lsp_definitions, {desc = "LSP definitions"})
 keymap.set('n', '<leader>fm', function() require('telescope.builtin').treesitter({default_text=":method:"}) end, {desc = "Find method"})
 
 -- Git-blame
@@ -79,7 +80,7 @@ keymap.set("n", "<leader>h9", function() require("harpoon.ui").nav_file(9) end, 
 keymap.set("n", "<leader>gm", function() require("messenger").show() end, {desc = "Git Messenger Show"})
 
 -- NeoGit
-keymap.set("n", "<leader>ng", function() require("neogit").open({ kind = "floating" }) end, {desc = "NeoGit"})
+keymap.set("n", "<leader>ng", function() require("neogit").open() end, {desc = "NeoGit"})
 
 -- Vim REST Console
 keymap.set("n", "<leader>xr", ":call VrcQuery()<CR>", {desc = "Run REST query"})
