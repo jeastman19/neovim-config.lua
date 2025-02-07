@@ -27,6 +27,11 @@ return {
           reverse_directories = true
         }
       },
-    }
+    },
+    pickers = {
+      find_files = {
+        hidden = true,
+      }
+    },
   }
 }
