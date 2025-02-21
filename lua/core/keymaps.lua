@@ -1,6 +1,3 @@
--- Set leader key to space
-vim.g.mapleader = " "
-
 local keymap = vim.keymap
 
 -- vim.keymap.set('n', '<Leader>dog', dog, { desc = "Do something dog like" }
