@@ -2,4 +2,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-require("nvim")
+require("config.lazy")
+
+-- These modules are not loaded by lazy
+require("core.options")
+require("core.keymaps")
+
