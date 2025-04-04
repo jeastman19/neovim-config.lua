@@ -4,7 +4,7 @@ return {
   event = "VeryLazy",
   config = function()
     require("chatgpt").setup({
---      api_key_cmd = "op read op://Employee/chatgptkey/credential --no-newline", -- OnePassword example
+      api_key_cmd = "op read op://Employee/chatgptkey/credential --no-newline", -- OnePassword example
       openai_params = {
         -- NOTE: model can be a function returning the model name
         -- this is useful if you want to change the model on the fly
@@ -30,7 +30,7 @@ return {
   dependencies = {
     "MunifTanjim/nui.nvim",
     "nvim-lua/plenary.nvim",
-    "folke/trouble.nvim",
-    "nvim-telescope/telescope.nvim"
+    "folke/trouble.nvim"
+    -- "ibhagwan/fzf-lua"
   }
 }
